@@ -1,0 +1,96 @@
+/* 🌐 Structure générale */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 🧭 Barre de navigation */
+nav {
+  background-color: #f0b4d3;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 📦 Conteneur principal */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgb(236, 211, 224);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* 📝 Titres */
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* 🧾 Formulaires */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, select, button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* 🖼️ Image preview */
+img.preview {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* ✅ Résultat estimation */
+.result {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ecf0f1;
+  border-left: 5px solid #3498db;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input, select, button {
+    font-size: 1rem;
+  }
+}
