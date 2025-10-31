@@ -15,18 +15,6 @@ function ImageUpload({ setPrice }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!image) return;
-
-    // Simulation de logique de prix
-    let basePrice = 0;
-
-    // Exemple de logique simple
-    if (taille === 'petit') basePrice = 2;
-    else if (taille === 'moyen') basePrice = 5;
-    else if (taille === 'grand') basePrice = 8;
-
-    if (etat === 'tres_bon') basePrice += 2;
-
-    setPrice(basePrice);
   };
 
   return (
@@ -34,11 +22,7 @@ function ImageUpload({ setPrice }) {
       <div>
         <input type="file" accept="image/*" onChange={handleChange} />
         {previewUrl && (
-          <img
-            src={previewUrl}
-            alt="Aperçu"
-            style={{ width: '120px', height: 'auto', marginTop: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }}
-          />
+          <img src={previewUrl} alt="Aperçu" style={{ width: '120px', height: 'auto', marginTop: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }} />
         )}
       </div>
 

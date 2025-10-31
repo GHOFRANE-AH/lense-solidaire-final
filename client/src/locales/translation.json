@@ -1,0 +1,28 @@
+{
+  "result": {
+    "title": "Résultat",
+    "object": "Objet",
+    "price": "Prix estimé"
+  },
+
+  "etat": {
+    "bon": "Bon état",
+    "tres_bon": "Très bon état"
+  },
+
+  "taille": {
+    "petit": "Petit",
+    "moyen": "Moyen",
+    "grand": "Grand"
+  },
+
+  "form": {
+    "submit": "Envoyer la photo"
+  },
+
+  "history": {
+    "title": "Historique des estimations",
+    "clear": "Effacer l'historique",
+    "date": "Date"
+  }
+}
